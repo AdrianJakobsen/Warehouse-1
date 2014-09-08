@@ -1,0 +1,14 @@
+
+public class Introduction {
+
+	public static void main(String[] args) {
+		System.out.println("hello java");
+		System.out.println("Skriv ut denne teksten!!!!");
+		int a = returnInt ();
+		}
+}
+private int returnInt(){
+			return -1;
+			
+	}
+
