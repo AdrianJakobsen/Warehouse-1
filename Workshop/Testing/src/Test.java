@@ -33,6 +33,6 @@ public class Test {
 		printString += " human. Your name is " + fullName + ", you are " + height + "cm tall and " + age + " years old.";
 		
 		System.out.println(printString);
-		System.out.println(firstname);
+		System.out.println(firstname[0]);
 	}
 }

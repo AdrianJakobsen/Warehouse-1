@@ -1,0 +1,13 @@
+
+public class SimpleMathLearningTool {
+
+	public static void main(String[] args) {
+		
+		int first = (int) Math.random()*10;
+		int second = (int) Math.random()*10;
+		Scanner input = new Scanner (System.in);
+				System.out.println("What is " + first "+ " + second "?");
+				
+	}
+
+}
