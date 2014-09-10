@@ -19,7 +19,7 @@ public class SimpleMathLearningTool {
 				System.out.println("CORRECT!!!!!");
 			}
 			else{
-				System.out.println("Wrong answer. Correct answer is: " + (first+second));
+				System.out.println("Wrong answer. Correct answer is" + (first+second));
 			}	
 		}
 		input.close();
