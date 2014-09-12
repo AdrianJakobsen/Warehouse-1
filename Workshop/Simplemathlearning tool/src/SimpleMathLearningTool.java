@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class SimpleMathLearningTool {
 	public static void main(String[] args) {
+		System.out.println("Write a number below 2147483647  \n\n");
 		Scanner input = new Scanner (System.in);
 		boolean exit = false;
 		while (!exit) {
