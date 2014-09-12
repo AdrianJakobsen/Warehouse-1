@@ -9,8 +9,8 @@ public class Display_time {
 		int numberOfSeconds = input.nextInt();
 		int minute = (numberOfSeconds / 60);
 		int seconds = (numberOfSeconds % 60);
-		
-		System.out.println(minute + "min" + seconds + "sec");
+		input.close();
+		System.out.println(minute + "min " + seconds + "sec ");
 	}
 	
 }

@@ -12,5 +12,5 @@ public class Display_time {
 		
 		System.out.println(minute + "min" + seconds + "sec");
 	}
-	
+	input.close();
 }
