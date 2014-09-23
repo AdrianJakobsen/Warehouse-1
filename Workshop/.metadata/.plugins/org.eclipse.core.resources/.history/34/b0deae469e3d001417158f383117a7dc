@@ -1,0 +1,16 @@
+
+public class Exercise1 {
+
+	public static void main(String[] args) {
+		
+		double tall1 = 10.0;
+		
+		double tall2 = 23.24;
+		double tall3 = 19.76;
+		
+		double avrage = (tall1 + tall2 + tall3)/3;
+		
+		System.out.println("The avrage is " + avrage);
+	}
+
+}

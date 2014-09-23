@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class GCD {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		boolean exit = false;
+		while (exit !=true){
+
+			System.out.println("Please enter first number: ");
+			int n1 = input.nextInt();
+			System.out.println("Please enter second nuumber: ");
+			int n2 = input.nextInt();
+			input.close();
+			System.out.println("GCD of the two numbers" + n1 + "and" + n2 +"is: " + findGCD(n1,n2));
+
+			
+
+	}
+	private static int findGCD(int n1, int n2){
+
+		if(n2 == 0){
+			return n1;
+		}
+		return findGCD(n2, n1%n2);
+	}
+}
+}

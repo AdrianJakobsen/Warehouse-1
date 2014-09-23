@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		
+		double x1, y1, x2, y2;
+		double distance;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("tast in koordinatene til første punkt: " + "(bruk mellomrom mellom dem): ");
+		
+		x1 = input.nextDouble();
+		y1 = input.nextDouble();
+		
+		System.out.println("tast in koordinatene til andre punkt: ");
+		x2 = input.nextDouble();
+		y2 = input.nextDouble();
+		input.close();
+		
+		String avstand;
+		
+		
+		double uttregning = Math.pow(x1-x2, 2) + Math.pow(y1-y2, 2);
+		System.out.println(uttregning);
+
+	}
+
+}

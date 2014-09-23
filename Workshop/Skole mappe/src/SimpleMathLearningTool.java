@@ -18,6 +18,8 @@ public class SimpleMathLearningTool {
 			
 			if (ok){
 				System.out.println("CORRECT!!!!!");
+				break;
+				
 			}
 			else{
 				System.out.println("Wrong answer. Correct answer is: " + (first+second));
