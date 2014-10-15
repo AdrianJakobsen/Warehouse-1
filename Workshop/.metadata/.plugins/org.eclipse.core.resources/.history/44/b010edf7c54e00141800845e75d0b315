@@ -1,0 +1,18 @@
+package objects;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Robot optimusPrime = new Robot();
+		optimusPrime.length = 40;
+
+		Robot wallE = new Robot();
+		wallE.length = 5;
+		
+		wallE.printStatus();
+		
+		optimusPrime.kill(wallE);
+
+
+	}
+}

@@ -1,0 +1,25 @@
+package objects;
+
+public class Robot {
+	String color;
+	int length;
+	int weigth;
+	boolean isAlive;
+
+	public Robot(){
+		isAlive = true;
+	}
+	public Robot(String color){
+		this.color = color;
+		this.isAlive = true;
+	}
+
+	public Robot(String color, int length, int weigth){
+		this.color = color; 
+		this.length = length;
+		this.weigth = weigth;
+	}
+	public void kill(Robot robotToKill){
+		robotToKill.isAlive = false;
+	}
+}

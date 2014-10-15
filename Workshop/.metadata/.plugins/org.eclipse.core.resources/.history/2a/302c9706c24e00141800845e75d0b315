@@ -1,0 +1,13 @@
+package objects;
+
+public class Robot {
+	String color;
+	int length;
+	int weigth;
+	
+	public Robot(){
+		color = "white";
+		length = 20;
+		weigth = 30;
+	}
+}

@@ -1,0 +1,14 @@
+package arrays;
+
+public class start {
+
+	public static void main(String[] args) {
+		String [] months = new String[]{"Januar", "februar", "Mars", "April", "Mai", "Juni", "juli"};
+
+		for (int i=0; i < months.length; i++){
+			System.out.println(months[i]);
+		}
+
+	}
+
+}

@@ -12,7 +12,7 @@ public class Sortere3Tall {
 		int num3 = input.nextInt();
 		input.close();
 		int number [] = {num1,num2,num3};
-		int temp; //hva er dette for???
+		int temp; //en variabel som er en integer brukt senere.
 		boolean correct = false;
 
 		while (correct == false){

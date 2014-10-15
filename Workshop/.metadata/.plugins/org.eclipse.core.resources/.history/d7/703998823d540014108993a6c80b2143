@@ -1,0 +1,11 @@
+
+public class beanMachine {
+
+	public static void main(String[] args) {
+		System.out.println("Please enter the number of balls to play: ");
+		
+		
+
+	}
+
+}

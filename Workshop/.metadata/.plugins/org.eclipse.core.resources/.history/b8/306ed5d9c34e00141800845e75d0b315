@@ -1,0 +1,20 @@
+package objects;
+
+public class Robot {
+	String color;
+	int length;
+	int weigth;
+
+	public Robot(){
+
+	}
+	public Robot(String color){
+		this.color = color;
+	}
+
+	public Robot(String color, int length, int weigth){
+		this.color = color; 
+		this.length = length;
+		this.weigth = weigth;
+	}
+}

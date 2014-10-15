@@ -1,0 +1,24 @@
+
+public class arrayInfo {
+
+	public static void main(String[] args) {
+		int[] arr ={1,2,3,4,5,6,7,8,0,0};
+		System.out.println("Forskjell største/minste = " + arrayInfo(arr,8,1));
+		System.out.println("Sum = " + arrayInfo(arr,8,2));
+		System.out.println("Sum = " + arrayInfo(arr,8,3));
+	}
+	public static int arrayInfo(int [] array, int key, int key2){
+		for (int i = 0; i < array.length; i++) {
+			array[i]= key && array[i]
+			if(key>key2){
+				int diffrenceBigSmall = key-key2;
+				return diffrenceBigSmall;
+
+			}
+			else{
+				int diffrenceBigSmall1 = key2-key;
+				return diffrenceBigSmall1;
+			}
+		}
+	}
+}

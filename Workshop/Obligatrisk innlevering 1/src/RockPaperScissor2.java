@@ -1,50 +1,53 @@
 import java.util.Random;
 import java.util.Scanner;
 
-
 public class RockPaperScissor2 {
 
 	public static void main(String[] args) {
+		print("scissor(1), rock (2), paper (3): ");
+
 		Scanner input = new Scanner(System.in);
-		Random rand = new Random();
-
-		int compute = rand.nextInt(3)+1;
-
-		System.out.println("scissor(1), rock (2), paper (3): ");
-
 		int answer = input.nextInt();
 		input.close();
 
-		String computegot=null;
-		switch(compute){
+		Random rand = new Random();
+		int compute = rand.nextInt(3)+1;
+
+		String computerString = valueToString(compute);
+		String userString = valueToString(answer);
+		String result = decider(compute, answer);
+		
+		String format = String.format("Computer got %s. You got %s. It is a %s.",computerString, userString, result);
+		print(format);
+	}
+	
+	public static void print(String s) {
+		System.out.println(s);
+	}
+
+	public static String valueToString(int value) {
+		String result ="";
+
+		switch(value){
 		case 1: 
-			computegot = "scissor";
+			result = "scissor";
 			break;
 		case 2: 
-			computegot = "rock";
+			result = "rock";
 			break;
 		case 3: 
-			computegot = "paper";
+			result = "paper";
 			break;
-		}
+		default: 
+			System.out.println("Wrong input!");
+			System.exit(0);
 
-		String Userinput=null;
-		switch(answer){
-		case 1:
-			Userinput = "scissor";
-			break;
-		case 2:
-			Userinput = "rock";
-			break;
-		case 3:
-			Userinput = "paper";
-			break;
-		default:
-			 System.out.println("Please enter 1, 2 or 3");
-			break;
 		}
+		return result;
+	}
 
-		int wld = compute-answer;
+	public static String decider(int computer, int input){
+		int wld = computer-input;
 		String winLoseDraw = "initialize";
 		switch(wld	){
 		case -2:
@@ -53,15 +56,12 @@ public class RockPaperScissor2 {
 			break;
 		case -1:
 		case 2:
-			winLoseDraw = "lose :(";
+			winLoseDraw = "loss :(";
 			break;
 		case 0:
 			winLoseDraw = "Draw";
 			break;
 		}
-
-		String result = String.format("Compute is %s. You picked %s. It is a %s.", computegot, Userinput, winLoseDraw);
-		System.out.println(result);
+		return winLoseDraw;
 	}
-
 }

@@ -1,0 +1,88 @@
+
+public class deBugging {
+
+
+	public static void main(String[] args) {
+
+		// start oppdrag 1
+
+	                //1. les feilmeldinger og fiks følgende deklarasjon
+	                char[] charArray = new char[] { 'c', 'y', 'k', 'a', };
+		
+		 
+
+		//	 start oppdrag 2
+
+	                //2. bruk breakpoint for å lese verdien til de forskjellige charArrToString
+	                //en av disse har ulovlig syntaks, hvorfor forklares i feilmeldingen. slett den før du starter programmet.
+	                //stopp programmet når du har funnet den rette måten å gjøre char[] til String, og print den ut
+
+	                //NB! breakpoints stopper debuggeren like før linja breakpointen står på er evaluert, ikke etter
+	                //du vil f.eks. kunne lese verdien til charArrayAsString1 om du setter breakpoint på linje 17, men ikke på l. 16
+	                String charArrayAsString1 = charArray.toString();
+	                String charArrayAsString2 = String.valueOf(charArray); // hold musa over valueOf-metoden for å lese hva den gjør
+	                String charArrayAsString3 = new String(charArray);
+	                
+
+
+	                System.out.println(charArrayAsString1.toString());
+
+		
+
+		/* start oppdrag 3
+
+	                //3. Bruk breakpoint til å kontrollere at halvedAge er faktisk halvparten av 21 før du printer tallet ut.
+	                int age = 21;
+	                double halvedAge = 21/2;
+
+	                System.out.println(halvedAge);
+
+		 */
+
+		/* start oppdrag 4
+
+	                // 4. Her er en feil i logikken, hvorfor?
+	                // hva må gjøres for å skrive ut "halved age is correct!" når det er sant uten å få en exception?
+	                String isHalvedAgeFixed;
+	                if (halvedAge != 10) {
+	                        isHalvedAgeFixed = "halved age is correct!";
+	                }
+	                System.out.println(isHalvedAgeFixed);
+
+		 */
+
+		/* start oppdrag 5
+	                //5. Denne beregninger består av mange feil, og alle feilmeldingene er ikke tilgjendelige. Du må løse alle feilene.
+	                //tips: legg ulike delene av beregningen i egne variabler slik at du kan lese dem med breakpoints
+	                //f eks: double pow1 = Math.pow(5,2);
+	                //int wtfIsDis = Math.pow(5,2)*2.001f+5*Math.sqrt('4');
+
+	                //System.out.println(wtfIsDis);
+
+		 */
+
+		/* start oppdrag 6
+	                // noe er feil i funksjonen isNumberThree, finn feilmeldingen og korriger logikken
+	                if (!isNumberThree(6)) {
+	                        System.out.println("The number is not three!");
+	                } else {
+	                        System.out.println("The number is three!");
+	                }
+		 */
+	}
+
+	/* del av oppdrag 6
+	        private static boolean isNumberThree(int number) {
+	                boolean istru;
+
+	                switch (number) {
+	                        case 1: istru = false;
+	                        case 2: istru = false;
+	                        case 3: istru = true;
+	                }
+
+	                return istru;
+	        }
+	 */
+}
+
