@@ -5,19 +5,20 @@ public class TtcTest {
 		TtcGameEngine engine = new TtcGameEngine();
 		boolean gameInProgress = true;
 		int remainingTurns = 9;	
-		engine.newBoard();
 		
-		while(gameInProgress != false){
-			engine.checkTurn(engine.currentPlayer);
-			engine.requestMove(engine.currentPlayer);
+		do{
+			engine.newBoard();
+			engine.checkTurn();
+			engine.requestMove();
 			if(engine.checkForWinner()==true){
+				engine.newBoard();
 				engine.win();
 			}
-			engine.newBoard();
-			 remainingTurns--;
-			 if(remainingTurns==0){
-				 engine.draw();
-			 }
-		}
+			remainingTurns--;
+			if(remainingTurns==0){
+				engine.newBoard();
+				engine.draw();	
+			}
+		}while(gameInProgress != false);
 	}
 }
