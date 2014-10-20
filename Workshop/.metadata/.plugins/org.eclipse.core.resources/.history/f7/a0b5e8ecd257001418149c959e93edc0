@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+
+public class TtcGameEngine {
+	
+	private boolean player1Turn;
+	private final char player1Symbol = 'X';
+	private final char player2Symbol = 'O';
+	
+	public TtcGameEngine(){
+		
+	}
+	void newBoard(){
+		
+	}
+}

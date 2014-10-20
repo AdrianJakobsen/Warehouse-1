@@ -1,0 +1,30 @@
+package objects;
+
+
+public class StopWatch {
+	long endTime = 0;
+   long startTime = 0;
+   
+	public void reset() {
+		endTime = 0;
+		startTime = 0;
+
+	}
+
+	public long getElapsedTime() {
+		long elapsedTime = endTime - startTime;	
+		return elapsedTime;
+	}
+
+	public void stop() {
+		endTime = System.currentTimeMillis();
+
+
+	}
+
+	public void start() {
+		startTime = System.currentTimeMillis();
+
+
+	}
+}

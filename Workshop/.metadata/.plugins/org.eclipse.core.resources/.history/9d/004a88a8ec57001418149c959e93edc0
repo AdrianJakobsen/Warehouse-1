@@ -1,0 +1,14 @@
+
+public class TtcTest {
+
+	public static void main(String[] args) {
+		TtcGameEngine engine = new TtcGameEngine();
+
+		engine.newBoard();
+		while(engine.win() !=true){
+			engine.requestMove(engine.player1Turn);
+			engine.checkForWinner();
+			engine.checkTurn(engine.player1Turn);
+		}
+	}
+}

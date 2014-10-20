@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class TtcGameEngine {
+	
+	private boolean player1Turn;
+	private final char player1Symbol = 'X';
+	private final char player2Symbol = 'O';
+	
+	public TtcGameEngine(){
+		
+	}
+	void newBoard(){
+		/*Scanner scanner = new Scanner(System.in);
+		System.out.println("Please enter the number of rows: ");
+		int numberOfRows = scanner.nextInt();
+		System.out.println("Please enter the number of Coulumns: ");
+		int numberOfColumns = scanner.nextInt();
+		TtcBoard map = new TtcBoard(numberOfRows,numberOfColumns);
+		*/
+		TtcBoard map = new TtcBoard(3,3);
+		map.getMap();
+		map.put(3,3,'O');
+		map.printMap();
+	}
+	//private requestMove(){
+		
+	//}
+	//private gameOver(){
+		
+	//}
+}

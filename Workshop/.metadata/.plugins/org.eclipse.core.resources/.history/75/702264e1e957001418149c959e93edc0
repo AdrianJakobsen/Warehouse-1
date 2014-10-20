@@ -1,0 +1,11 @@
+
+public class TtcTest {
+
+	public static void main(String[] args) {
+		TtcGameEngine engine = new TtcGameEngine();
+		
+		engine.newBoard();
+		
+	}
+
+}

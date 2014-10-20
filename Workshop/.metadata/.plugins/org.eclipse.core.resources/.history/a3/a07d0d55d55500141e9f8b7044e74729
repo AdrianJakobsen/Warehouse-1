@@ -1,0 +1,24 @@
+package objects;
+
+import java.util.Scanner;
+
+public class StudentList {
+	Scanner scanner = new Scanner(System.in);
+	String firstName = "";
+	String lastName = "";
+	String age ="";
+	String sex = "";
+	
+	void  student(){
+		firstName = scanner.nextLine();
+		System.out.println(firstName);
+		lastName = scanner.nextLine();
+		System.out.println(lastName);
+		age = scanner.nextLine();
+		System.out.println(age);
+		sex = scanner.nextLine();
+		System.out.println(sex);
+		
+	}
+	
+}

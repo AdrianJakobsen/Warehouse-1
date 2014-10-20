@@ -1,0 +1,11 @@
+package objects;
+
+import java.util.Scanner;
+
+public class studentListerTest {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

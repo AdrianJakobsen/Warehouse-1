@@ -1,0 +1,13 @@
+
+public class TtcTest {
+
+	public static void main(String[] args) {
+		TtcGameEngine engine = new TtcGameEngine();
+		
+		engine.newBoard();
+		engine.requestMove(engine.player1Turn);
+		engine.checkForWinner();
+		engine.checkTurn();
+	}
+
+}

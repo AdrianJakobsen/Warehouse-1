@@ -1,0 +1,12 @@
+package objects;
+
+public class Student {
+	private String firstName;
+	private String lastName;
+	private int age;
+	private char sex;
+	
+	public student(String firstName, String lastName, int age, char sex){
+		
+	}
+}

@@ -1,0 +1,15 @@
+package objects;
+
+public class Student {
+	private String firstName;
+	private String lastName;
+	private int age;
+	private String sex;
+
+	
+	public String Student(String firstName, String lastName, int age, String sex) {
+		String studentInfo = firstName + lastName + age + sex;
+		return studentInfo;
+		
+	}
+}

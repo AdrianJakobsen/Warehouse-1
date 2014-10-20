@@ -1,0 +1,11 @@
+
+public class TtcTest {
+
+	public static void main(String[] args) {
+		TtcBoard map = new TtcBoard(3,3);
+		
+		map.put(2, 2, 'O');
+		map.printMap();
+	}
+
+}
