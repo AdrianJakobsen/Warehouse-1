@@ -1,0 +1,25 @@
+package oppgave4;
+
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class ReadFromFile {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		//		System.out.println("Working Directory = " +
+		//				System.getProperty("user.dir"));
+		while(true){
+			System.out.println("Please enter the name of the txt file you want: ");
+			String fileNameInput = input.next(); 
+			java.io.File file = new java.io.File(fileNameInput+".txt");
+
+			try {
+				Scanner scanFile = new Scanner(file);
+			} catch (FileNotFoundException e) {
+
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package ex2;
+
+public class Account {
+	
+	public Account(){
+		
+	}
+	public Account(int id, int balance){
+		
+	}
+}

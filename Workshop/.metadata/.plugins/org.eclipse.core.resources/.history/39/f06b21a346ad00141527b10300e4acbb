@@ -1,0 +1,25 @@
+package eiendomsSystem;
+
+import java.util.GregorianCalendar;
+
+
+public class Offer {
+	private GregorianCalendar offerMade;
+	private GregorianCalendar deadlineOffer;
+	private float amount;
+	private String name;
+	private String phoneNumber;
+	
+	public Offer (String name, float amount, String phoneNumber, int deadLine ){
+		offerMade = new GregorianCalendar();
+		deadlineOffer = new GregorianCalendar();
+		this.name =name;
+		this.amount=amount;
+		this.phoneNumber=phoneNumber;
+		this.deadlineOffer.add(GregorianCalendar.HOUR, deadLine);		
+	}
+	@Override
+	public String toString(){
+		return this.offerMade.getTime() + "\t\t\t" +this.deadlineOffer.getTime()+ "\t\t\t" + this.name + "\t\t\t" + this.phoneNumber;
+	}
+}

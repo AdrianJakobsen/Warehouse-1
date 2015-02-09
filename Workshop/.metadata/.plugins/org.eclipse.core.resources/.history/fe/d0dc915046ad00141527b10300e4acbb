@@ -1,0 +1,16 @@
+package eiendomsSystem;
+
+public class test {
+
+	public static void main(String[] args) {
+		Property prop = new apartment("kløverengveien 5", "adrian", 100000, 50, 90);
+		prop.newOffer("sdaf", 100, "P", 6);
+		prop.newOffer("prop", 9999, "my number", 5);
+		Property prop2 = new detachedHouse();
+		prop2.newOffer("sadjkhngfsodn", 100, "1023940", 9);
+		prop2.newOffer("prop", 9999, "my number", 5);
+		prop2.printAllOffers();
+		
+	}
+
+}

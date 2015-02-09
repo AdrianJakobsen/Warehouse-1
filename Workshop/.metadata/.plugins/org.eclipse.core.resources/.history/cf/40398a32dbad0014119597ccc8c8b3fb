@@ -1,0 +1,47 @@
+package eiendomsSystem;
+
+import java.util.ArrayList;
+
+public class Property {
+	private String address;
+	private String ownersName;
+	private double valuation;
+	private int numberOfKvm;
+	private int gnr;
+	private int bnr;
+	private ArrayList<Offer> offers = new ArrayList<Offer>();
+	
+	protected void newOffer (String name, float amount, String phoneNumber, int Deadline ){
+		offers.add(new Offer(name, amount, phoneNumber, Deadline));
+	}
+	
+	public String getLastOfferMade(){
+		Offer lastbid = offers.get(offers.size()-1);
+		return lastbid.toString();
+		
+	}
+	protected void printAllOffers(){
+		
+	}
+	public String getAddress(){
+		return address;
+	}
+	public String getOwnersName(){
+		return ownersName;
+	}
+	public double getValutaion(){
+		return valuation;
+	}
+	public int getNumberOfKvm(){
+		return numberOfKvm;
+	}
+	public int getGnr(){
+		return gnr;
+	}
+	public int getBnr(){
+		return bnr;
+	}
+	public ArrayList<Offer> getOffers(){
+		return offers;
+	}
+}

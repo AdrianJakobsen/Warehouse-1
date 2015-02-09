@@ -1,0 +1,27 @@
+package eiendomsSystem;
+
+import java.util.ArrayList;
+
+public class Property {
+	protected String address;
+	protected String ownersName;
+	protected double rate;
+	protected int numberOfKvm;
+	protected int gnr;
+	protected int bnr;
+	protected ArrayList<Offer> offers = new ArrayList<Offer>();
+	
+	public void newOffer (String name, float amount, String phoneNumber, int Deadline ){
+		offers.add(new Offer(name, amount, phoneNumber, Deadline));
+	}
+	
+	public String getLastOfferMade(){
+		Offer lastbid = offers.get(offers.size()-1);
+		return lastbid.toString();
+		
+	}
+	protected void printAllOffers(){
+		
+	}
+	
+}

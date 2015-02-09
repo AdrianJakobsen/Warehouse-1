@@ -1,0 +1,10 @@
+package eiendomsSystem;
+
+public class test {
+
+	public static void main(String[] args) {
+	Property prop1 = new apartment("kløverengveien 5", "adrian", 1000000, 20, 40);
+	
+	}
+
+}

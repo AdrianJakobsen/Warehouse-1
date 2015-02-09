@@ -1,0 +1,20 @@
+package impl;
+
+import java.util.GregorianCalendar;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GregorianCalendar cal = new GregorianCalendar();
+		System.out.println(cal.getTime());
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(cal.getTime());
+	}
+
+}

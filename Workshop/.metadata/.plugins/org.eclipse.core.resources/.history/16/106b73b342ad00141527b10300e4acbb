@@ -1,0 +1,10 @@
+package eiendomsSystem;
+
+public class detachedHouse {
+	private int type;
+	public final int standAlone = 1;
+	public final int row = 2;
+	public final int doubleHouse = 3;
+	
+
+}

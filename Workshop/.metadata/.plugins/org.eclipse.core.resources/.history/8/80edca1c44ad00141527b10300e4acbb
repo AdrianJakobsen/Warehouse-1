@@ -1,0 +1,23 @@
+package eiendomsSystem;
+
+public class detachedHouse {
+	private int type;
+	public final int standAlone = 1;
+	public final int row = 2;
+	public final int doubleHouse = 3;
+
+	private String getTypeAsString(){
+		switch (type){
+		case 1: 
+				return "standAlone";
+		case 2: 
+				return "row";
+		case 3: 
+				return "doubleHouse";
+		default: 
+			return "Type Not Chosen";
+		}
+	}
+}
+
+

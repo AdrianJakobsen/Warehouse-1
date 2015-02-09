@@ -1,0 +1,11 @@
+package eiendomsSystem;
+
+public class test {
+
+	public static void main(String[] args) {
+		Property prop = new Property();
+		prop.newOffer("sdaf", 100, "P", 6);
+		System.out.println(prop.getLastOfferMade());
+	}
+
+}

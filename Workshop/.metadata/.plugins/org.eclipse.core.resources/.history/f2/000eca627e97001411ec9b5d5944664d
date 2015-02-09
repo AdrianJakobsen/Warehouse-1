@@ -1,0 +1,41 @@
+package test;
+
+import static org.junit.Assert.*;
+import implementation.CDArkiv;
+import org.junit.Test;
+
+public class CDArkivTest {
+	
+	@Test
+	public void checkDefaultConstructor() {
+		CDArkiv archive = new CDArkiv();
+		assertNotNull(archive);
+	}
+	@Test
+	public void checkParameterFilledConstructor(){
+		CDArkiv archive = new CDArkiv("paul mcartney", 1969, 39.99,"Yellow Submarine","Party","master of puppets");
+		assertEquals(1, archive.getArchive().size());
+	}
+	@Test
+	public void checkAddCD(){
+		CDArkiv archive = new CDArkiv();
+		archive.addCD("paul mcartney", 1969, 39.99,"Yellow Submarine","Party","master of puppets");
+		assertEquals(1, archive.getArchive().size());
+	}
+	@Test
+	public void checkAdd3CDs(){
+		CDArkiv archive = new CDArkiv();
+		archive.addCD("paul mcartney", 1969, 39.99,"Yellow Submarine","Party","master of puppets");
+		archive.addCD("megaman", 2000, 49.99);
+		archive.addCD("gadget", 1990, 5.39);
+		assertEquals(3, archive.getArchive().size());
+	}
+	@Test
+	public void showCDArchive(){
+		CDArkiv archive = new CDArkiv();
+		archive.addCD("paul mcartney", 1969, 39.99,"Yellow Submarine","Party","master of puppets");
+		archive.addCD("megaman", 2000, 49.99,"happy ","sad ","angry ","lasy ");
+		archive.addCD("gadget", 1990, 5.39,"pai ","partyman ");
+		assertEquals(archive.toString(), "paul mcartney 1969 39.99 1: master of puppets2: Party3: Yellow Submarine\nmegaman 2000 49.99 1: lasy 2: angry 3: sad 4: happy \ngadget 1990 5.39 1: partyman 2: pai \n");
+	}
+}

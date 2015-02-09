@@ -1,0 +1,19 @@
+package eiendomsSystem;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class Offer {
+	private Calendar offerMade = new GregorianCalendar();
+	private Calendar deadlineOffer = new GregorianCalendar();
+	private float amount;
+	private String name;
+	private String phoneNumber;
+	
+	public Offer (String name, float amount, String phoneNumber, int Deadline ){
+		this.name =name;
+		this.amount=amount;
+		this.phoneNumber=phoneNumber;
+		this.deadlineOffer = this.offerMade.set(, month, date);
+	}
+}

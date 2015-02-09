@@ -1,0 +1,24 @@
+package eiendomsSystem;
+
+public class apartment extends Property{
+	private double sharedDebt;
+	private double rent;
+	private int numberOfFloors;
+
+	public apartment(String address, String name, int valuation, int gnr, int bnr) {
+		this.valuation=valuation;
+		this.gnr=gnr;
+		this.bnr=bnr;
+		this.address=address;
+	}
+
+	@Override
+	public void printAllOffers(){
+		System.out.println("Offers given for apartment " + address + ", valuation = " + valuation + ", gnr = " + gnr + ", bnr = " + bnr);
+		System.out.println("Offer made\t\t\tDeadline\t\t\tName\t\t\tPhoneNumber");
+		for(int i = 1; i<offers.size()+1; i++){
+			Offer offer = offers.get(offers.size()-i);
+			System.out.println(offer);
+		}
+	}
+}

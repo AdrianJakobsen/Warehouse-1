@@ -1,0 +1,31 @@
+package eiendomsSystem;
+
+import java.util.Scanner;
+
+public class test {
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		Property prop1 = new apartment("kløverengveien 5", "adrian", 1000000, 20, 40);
+		prop1.newOffer("Knut henriksen", 100000, "99781243", 5);
+		prop1.newOffer("Lars Larsen", 3049950, "94385920", 6948);
+		Property prop2 = new detachedHouse("droningens Gate 3", "Pettersen", 2030492, 20, 64, 2);
+		prop2.newOffer("pål pålsen", 1640000, "13787643", 4);
+		prop2.newOffer("Jimmy Hendriks", 8654950, "95735920", 70);
+		prop1.printAllOffers();
+		System.out.println();
+		System.out.println();
+		prop2.printAllOffers();
+		
+		while(true){
+			System.out.println("Please enter gnr: ");
+			int gnrInput = input.nextInt();
+			System.out.println("Please enter bnr ");
+			int bnrInput = input.nextInt();
+			
+		}
+
+	}	
+
+}

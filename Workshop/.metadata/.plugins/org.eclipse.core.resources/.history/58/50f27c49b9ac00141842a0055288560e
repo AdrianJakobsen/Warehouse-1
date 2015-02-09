@@ -1,0 +1,14 @@
+package eiendomsSystem;
+
+import java.util.ArrayList;
+
+public class Eiendom {
+	private String address;
+	private String ownersName;
+	private	double rate;
+	private	int numberOfKvm;
+	private	int gnr;
+	private int bnr;
+	private ArrayList<Offer> offers = new ArrayList<Offer>();
+
+}

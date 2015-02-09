@@ -17,7 +17,7 @@ public class Oppgave1 {
 		switch(answerType){
 
 		case 1: 
-			for(int i=0; i< array.length; i++){
+			for(int i=0; i< numberOfElements; i++){
 				if(array[i] > largetst)
 					largetst = array[i];
 				else if (array[i] < smallest)
@@ -26,13 +26,13 @@ public class Oppgave1 {
 			return diffrence;
 
 		case 2: 
-			for (int i = 0; i < array.length; i++) {
+			for (int i = 0; i < numberOfElements; i++) {
 				sum += array[i];}
 			return sum;
 
 		case 3:
 			int sum1 = 0;
-			for (int i = 0; i < array.length; i++) {
+			for (int i = 0; i < numberOfElements; i++) {
 				sum1 += array[i];
 				snitt = sum1/numberOfElements;}
 			return snitt;
